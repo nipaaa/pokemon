@@ -22,7 +22,7 @@ const Home = () => {
         <div>
             <form onSubmit={handlePokemon} className="field">
                 <h1>Pokemon</h1>
-                <input type="text" placeholder='search by name' name='name' />
+                <input type="text" placeholder='search by name (cheri, chesto, pecha)' name='name' />
                 <button type='submit'>Search</button>
             </form>
 

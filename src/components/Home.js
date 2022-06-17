@@ -20,13 +20,21 @@ const Home = () => {
 
     return (
         <div>
-            <form onSubmit={handlePokemon}>
+            <form onSubmit={handlePokemon} className="field">
+                <h1>Pokemon</h1>
                 <input type="text" placeholder='search by name' name='name' />
                 <button type='submit'>Search</button>
             </form>
 
-            <div>
-                <h1>{pokemon.firmness?.name}</h1>
+            <div className='card'>
+                <div>
+                <h1>Name: {pokemon.firmness?.name}</h1>
+                <h1>Item: {pokemon.item?.name}</h1>
+                <h1>Natural Gift Power: {pokemon.natural_gift_power}</h1>
+                <h1>Natural Gift Type: {pokemon.natural_gift_type?.name}</h1>
+                <h1>Smoothness: {pokemon.smoothness}</h1>
+                </div>
+               
             </div>
         </div>
 
